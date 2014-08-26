@@ -5,10 +5,15 @@ filetype plugin indent on
 " set omnifunc=syntaxcomplete#Complete
 set encoding=utf-8
 
+" enable vim-airline
+set laststatus=2
+
 set autochdir
 set number
-set background=light
-colorscheme desert
+" set background=light
+" colorscheme desert
+colorscheme lucius
+LuciusLight
 " not working in console, only gvim o MacVim
 " set clipboard=unnamedplus
 
@@ -100,3 +105,8 @@ autocmd InsertEnter * if !exists('w:last_fdm') | let w:last_fdm=&foldmethod | se
 autocmd InsertLeave,WinLeave * if exists('w:last_fdm') | let &l:foldmethod=w:last_fdm | unlet w:last_fdm | endif
 
 let g:EasyGrepRecursive=1
+
+" vim-airline
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#left_sep = ' '
+let g:airline#extensions#tabline#left_alt_sep = '|'
