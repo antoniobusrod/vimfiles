@@ -10,10 +10,13 @@ set laststatus=2
 
 set autochdir
 set number
-" set background=light
-" colorscheme desert
-colorscheme lucius
-LuciusLight
+
+" Theme (color scheme)
+set background=light
+" colorscheme desert "good in dark console?
+" colorscheme lucius "favourite
+" LuciusLight
+
 " not working in console, only gvim o MacVim
 " set clipboard=unnamedplus
 
