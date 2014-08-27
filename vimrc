@@ -10,6 +10,7 @@ set laststatus=2
 
 set autochdir
 set number
+set autoread
 
 " Theme (color scheme)
 set background=light
