@@ -1,8 +1,7 @@
-let g:pathogen_disabled = [ 'vim-javascript-syntax', 'vim-nodejs-complete' ]
+let g:pathogen_disabled = [ 'vim-javascript-syntax' ]
 execute pathogen#infect()
 syntax on
 filetype plugin indent on
-" set omnifunc=syntaxcomplete#Complete
 set encoding=utf-8
 
 " enable vim-airline
@@ -90,11 +89,7 @@ map <silent> <leader>V :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimr
 let g:NERDTreeWinSize=50 
 let g:NERDSpaceDelims=1
 " au FileType javascript call JavaScriptFold()
-" au FileType javascript set dictionary+=$HOME/vimfiles/dict/node.dict
-" let g:nodejs_complete_config = {
-" \  'js_compl_fn': 'jscomplete#CompleteJS',
-" \  'max_node_compl_len': 15
-" \}
+au FileType javascript set dictionary+=$HOME/vimfiles/dict/node.dict
 " let g:tern_map_keys=1
 " let g:tern_show_argument_hints='on_hold'
 au BufNewFile,BufRead *.dsc set filetype=javascript
