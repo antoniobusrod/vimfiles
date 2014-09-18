@@ -49,7 +49,6 @@ map <C-c> y
 map <C-x> d
 map <C-z> u
 map <C-t> :tabnew <Enter>
-map <C-i> >>
 " map <C-w> :close <Enter>
 " map <C-W> :q! <Enter>
 map <F3> n
