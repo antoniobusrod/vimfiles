@@ -1,4 +1,4 @@
-let g:pathogen_disabled = [ 'vim-javascript-syntax' ]
+let g:pathogen_disabled = [ 'vim-javascript-syntax', 'vim-node-dict' ]
 execute pathogen#infect()
 syntax on
 filetype plugin indent on
@@ -52,6 +52,7 @@ map <C-t> :tabnew <Enter>
 " map <C-w> :close <Enter>
 " map <C-W> :q! <Enter>
 map <F3> n
+map <F7> :JSHint<CR>
 " map <C-h> :%s/
 map <S-t> vat
 map <S-T> vit
