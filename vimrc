@@ -105,6 +105,8 @@ au BufNewFile,BufRead *.dsc set filetype=javascript
 " screwing up folding when switching between windows.
 autocmd InsertEnter * if !exists('w:last_fdm') | let w:last_fdm=&foldmethod | setlocal foldmethod=manual | endif
 autocmd InsertLeave,WinLeave * if exists('w:last_fdm') | let &l:foldmethod=w:last_fdm | unlet w:last_fdm | endif
+" Disable fold as soon as you open a file
+set foldlevelstart=20
 
 let g:EasyGrepRecursive=1
 
