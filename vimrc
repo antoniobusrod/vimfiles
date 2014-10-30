@@ -117,3 +117,7 @@ let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
 " disable detection of whitespace errors
 let g:airline#extensions#whitespace#enabled = 0
+
+" vim-markdown
+let g:vim_markdown_initial_foldlevel=20
+
