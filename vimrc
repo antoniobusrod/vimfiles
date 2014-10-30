@@ -62,6 +62,7 @@ map <S-[> vi[
 map <F9> :nohlsearch<CR>
 map <F5> :tabclose<CR>
 map <F8> :let @/='\<<C-R>=expand("<cword>")<CR>\>'<CR>:set hls<CR>
+map <2-LeftMouse> :let @/='\<<C-R>=expand("<cword>")<CR>\>'<CR>:set hls<CR>
 
 " au BufNewFile,BufRead *.rabl so <sfile>:h/ruby.vim
 au BufNewFile,BufRead *.rabl set filetype=ruby
