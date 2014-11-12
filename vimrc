@@ -1,4 +1,4 @@
-let g:pathogen_disabled = [ 'vim-javascript-syntax', 'vim-node-dict' ]
+let g:pathogen_disabled = [ 'vim-node-dict' ]
 execute pathogen#infect()
 syntax on
 filetype plugin indent on
@@ -36,6 +36,11 @@ set hlsearch
 set smartcase
 set incsearch
 set foldmethod=syntax
+" Disable fold as soon as you open a file
+set foldlevel=20
+
+" Enable folding for vim-javascript-syntax plugin
+au FileType javascript call JavaScriptFold()
 
 " keyboard shortcuts
 let mapleader = ','
@@ -92,7 +97,6 @@ let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 
 let g:NERDTreeWinSize=50 
 let g:NERDSpaceDelims=1
-" au FileType javascript call JavaScriptFold()
 au FileType javascript set dictionary+=$HOME/vimfiles/dict/node.dict
 " let g:tern_map_keys=1
 " let g:tern_show_argument_hints='on_hold'
@@ -106,8 +110,6 @@ au BufNewFile,BufRead *.dsc set filetype=javascript
 " screwing up folding when switching between windows.
 autocmd InsertEnter * if !exists('w:last_fdm') | let w:last_fdm=&foldmethod | setlocal foldmethod=manual | endif
 autocmd InsertLeave,WinLeave * if exists('w:last_fdm') | let &l:foldmethod=w:last_fdm | unlet w:last_fdm | endif
-" Disable fold as soon as you open a file
-set foldlevelstart=20
 
 let g:EasyGrepRecursive=1
 
