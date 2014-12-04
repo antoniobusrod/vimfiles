@@ -74,7 +74,7 @@ au BufNewFile,BufRead *.rabl set filetype=ruby
 set guifont=Consolas:h10
 set ruler
 set nobackup
-set langmenu=en_US
+set langmenu=en_US.UTF-8
 let $LANG = 'en_US'
 source $VIMRUNTIME/delmenu.vim
 source $VIMRUNTIME/menu.vim
