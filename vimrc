@@ -123,3 +123,7 @@ let g:airline#extensions#whitespace#enabled = 0
 " vim-markdown
 let g:vim_markdown_initial_foldlevel=20
 
+" vim-signify
+let g:signify_vcs_list = [ 'git' ]
+let g:signify_update_on_focusgained = 1
+
