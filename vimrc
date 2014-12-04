@@ -127,3 +127,9 @@ let g:vim_markdown_initial_foldlevel=20
 let g:signify_vcs_list = [ 'git' ]
 let g:signify_update_on_focusgained = 1
 
+" Vertical column at 80
+if exists('+colorcolumn')
+  set colorcolumn=80
+else
+  au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
+endif
