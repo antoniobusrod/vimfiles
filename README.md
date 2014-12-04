@@ -9,7 +9,8 @@ Move `vimrc` to your home directory as `.vimrc`
 
 ```bash
 git submodule init .
-git submodule update --recursive
 
+git submodule sync
+git submodule update --recursive
 git submodule foreach git pull origin master
 ```
