@@ -112,6 +112,9 @@ au BufNewFile,BufRead *.dsc set filetype=javascript
 autocmd InsertEnter * if !exists('w:last_fdm') | let w:last_fdm=&foldmethod | setlocal foldmethod=manual | endif
 autocmd InsertLeave,WinLeave * if exists('w:last_fdm') | let &l:foldmethod=w:last_fdm | unlet w:last_fdm | endif
 
+" fold by indentation, two-space indentation for CoffeeScript files
+autocmd BufNewFile,BufReadPost *.coffee setl foldmethod=indent nofoldenable shiftwidth=2 expandtab
+
 let g:EasyGrepRecursive=1
 
 " vim-airline
