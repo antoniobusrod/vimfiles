@@ -20,6 +20,7 @@ set background=light
 " not working in console, only gvim o MacVim
 " set clipboard=unnamedplus
 
+set backspace=2 " make backspace work like most other apps
 set wrap
 set linebreak
 set autoindent    " align the new line indent with the previous line
