@@ -114,7 +114,7 @@ autocmd InsertEnter * if !exists('w:last_fdm') | let w:last_fdm=&foldmethod | se
 autocmd InsertLeave,WinLeave * if exists('w:last_fdm') | let &l:foldmethod=w:last_fdm | unlet w:last_fdm | endif
 
 " fold by indentation, two-space indentation for CoffeeScript files
-autocmd BufNewFile,BufReadPost *.coffee setl foldmethod=indent nofoldenable shiftwidth=2 expandtab
+autocmd BufNewFile,BufReadPost *.coffee setl foldmethod=indent nofoldenable
 let g:node#includeCoffee = 1
 
 let g:EasyGrepRecursive=1
