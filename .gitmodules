@@ -33,7 +33,7 @@
 	url = https://github.com/pangloss/vim-javascript.git
 [submodule "bundle/vim-javascript-syntax"]
 	path = bundle/vim-javascript-syntax
-	url = git@github.com:antoniodots/vim-javascript-syntax.git
+	url = https://github.com/antoniobusrod/vim-javascript-syntax.git
 [submodule "bundle/vim-lucius"]
 	path = bundle/vim-lucius
 	url = https://github.com/jonathanfilip/vim-lucius.git
