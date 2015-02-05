@@ -24,7 +24,6 @@ set backspace=2 " make backspace work like most other apps
 set wrap
 set linebreak
 set autoindent    " align the new line indent with the previous line
-set noexpandtab
 set tabstop=2     " an hard TAB displays as 2 columns
 set shiftwidth=2  " operation >> indents 2 columns; << unindents 2 columns
 "set expandtab     " insert spaces when hitting TABs
