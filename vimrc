@@ -26,9 +26,9 @@ set linebreak
 set autoindent    " align the new line indent with the previous line
 set tabstop=2     " an hard TAB displays as 2 columns
 set shiftwidth=2  " operation >> indents 2 columns; << unindents 2 columns
-"set expandtab     " insert spaces when hitting TABs
-"set softtabstop=2 " insert/delete 2 spaces when hitting a TAB/BACKSPACE
-"set shiftround    " round indent to multiple of 'shiftwidth'
+set expandtab     " insert spaces when hitting TABs
+" set softtabstop=2 " insert/delete 2 spaces when hitting a TAB/BACKSPACE
+" set shiftround    " round indent to multiple of 'shiftwidth'
 set formatoptions=l
 set lbr
 set hlsearch
@@ -113,7 +113,7 @@ autocmd InsertEnter * if !exists('w:last_fdm') | let w:last_fdm=&foldmethod | se
 autocmd InsertLeave,WinLeave * if exists('w:last_fdm') | let &l:foldmethod=w:last_fdm | unlet w:last_fdm | endif
 
 " fold by indentation, two-space indentation for CoffeeScript files
-autocmd BufNewFile,BufReadPost *.coffee setl foldmethod=indent nofoldenable
+autocmd BufNewFile,BufReadPost *.coffee setl foldmethod=indent shiftwidth=2
 let g:node#includeCoffee = 1
 
 let g:EasyGrepRecursive=1
