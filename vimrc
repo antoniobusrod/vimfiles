@@ -12,8 +12,8 @@ set number
 set autoread
 
 " Theme (color scheme)
-set background=light
-" colorscheme desert "good in dark console?
+" set background=dark
+colorscheme desert "good in dark console?
 " colorscheme lucius "favourite
 " LuciusLight
 
