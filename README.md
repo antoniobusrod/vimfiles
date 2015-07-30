@@ -16,4 +16,7 @@ git submodule foreach git pull origin master
 
 # Alternative 2
 git submodule update --init --recursive
+
+# Alternative 3
+git submodule -q foreach git pull -q origin master
 ```
