@@ -127,6 +127,10 @@ let g:airline#extensions#whitespace#enabled = 0
 
 " vim-markdown
 let g:vim_markdown_initial_foldlevel=20
+autocmd BufNewFile,BufReadPost *.md set filetype=markdown
+
+" vim-instant-markdown
+let g:instant_markdown_autostart = 0 " use :InstantMarkdownPreview instead
 
 " vim-signify
 let g:signify_vcs_list = [ 'git' ]
