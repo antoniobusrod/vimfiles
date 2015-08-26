@@ -1,4 +1,4 @@
-let g:pathogen_disabled = [ 'YouCompleteMe', 'vim-nodejs-complete' ]
+let g:pathogen_disabled = [ 'vim-nodejs-complete' ]
 execute pathogen#infect()
 syntax on
 filetype plugin indent on
