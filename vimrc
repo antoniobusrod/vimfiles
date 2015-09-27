@@ -46,6 +46,9 @@ Plugin 'tpope/vim-repeat.git'
 Plugin 'mhinz/vim-signify.git'
 Plugin 'tpope/vim-surround.git'
 " Plugin 'ingydotnet/yaml-vim.git'
+Plugin 'scrooloose/syntastic'
+Plugin 'Shutnik/jshint2.vim'
+Plugin 'elzr/vim-json'
 " ============================================================================
 
 " All of your Plugins must be added before the following line
@@ -179,3 +182,13 @@ else
   au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
 endif
 
+" Syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+let g:syntastic_loc_list_height = 5
+let g:syntastic_javascript_checkers = ['jshint']
