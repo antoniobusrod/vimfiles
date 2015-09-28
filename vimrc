@@ -23,7 +23,7 @@ Plugin 'godlygeek/tabular.git'
 Plugin 'marijnh/tern_for_vim.git'
 Plugin 'bling/vim-airline.git'
 Plugin 'moll/vim-bbye.git' " Buffer Bye
-Plugin 'kchmck/vim-coffee-script.git'
+Plugin 'antoniobusrod/vim-coffee-script.git'
 " Plugin 'altercation/vim-colors-solarized.git'
 " Plugin 'antoniobusrod/vim-daylight.git'
 " Plugin 'svermeulen/vim-easyclip.git'
