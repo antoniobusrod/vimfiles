@@ -95,9 +95,6 @@ map <C-k> <C-w>k
 map <C-l> <C-w>l
 map <C-a> GVgg
 map <C-s> :w <Enter>
-map <C-c> y
-map <C-x> d
-map <C-z> u
 map <C-t> :tabnew <Enter>
 " map <C-w> :close <Enter>
 " map <C-W> :q! <Enter>
