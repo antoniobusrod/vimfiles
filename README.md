@@ -6,6 +6,7 @@ Installation
 1. Clone repo, `git clone https://github.com/antoniobusrod/vimfiles.git`
 2. [Install vundle plugin](https://github.com/VundleVim/Vundle.vim#quick-start)
 3. Install dependencies, `vim +PluginInstall +qall`
+   1. Update dependencies `vim +PluginUpdate +qall`
 4. Set symbolic links to `.vim` dir and `.vimrc` file
   ```
   ln -s vimfiles ~/.vim
