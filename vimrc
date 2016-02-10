@@ -14,7 +14,7 @@ Plugin 'VundleVim/Vundle.vim'
 " ============================================================================
 Plugin 'vim-scripts/The-NERD-Commenter.git'
 Plugin 'vim-scripts/XML-Folding.git'
-" Plugin 'Valloric/YouCompleteMe'
+Plugin 'Valloric/YouCompleteMe'
 Plugin 'ctrlpvim/ctrlp.vim.git'
 Plugin 'Raimondi/delimitMate.git' " provides insert mode auto-completion for quotes, parens, brackets, etc
 " Plugin 'twitter/hogan.js'
