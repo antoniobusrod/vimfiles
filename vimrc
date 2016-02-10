@@ -21,7 +21,8 @@ Plugin 'Raimondi/delimitMate.git' " provides insert mode auto-completion for quo
 Plugin 'scrooloose/nerdtree.git'
 Plugin 'godlygeek/tabular.git'
 Plugin 'marijnh/tern_for_vim.git'
-Plugin 'bling/vim-airline.git'
+Plugin 'vim-airline/vim-airline.git'
+Plugin 'vim-airline/vim-airline-themes.git'
 Plugin 'moll/vim-bbye.git' " Buffer Bye
 Plugin 'antoniobusrod/vim-coffee-script.git'
 " Plugin 'altercation/vim-colors-solarized.git'
