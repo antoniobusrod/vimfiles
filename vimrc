@@ -136,8 +136,8 @@ let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|components'
 let g:NERDTreeWinSize=50 
 let g:NERDSpaceDelims=1
 au FileType javascript set dictionary+=$HOME/vimfiles/dict/node.dict
-" let g:tern_map_keys=1
-" let g:tern_show_argument_hints='on_hold'
+let g:tern_map_keys=1
+let g:tern_show_argument_hints='on_hold'
 au BufNewFile,BufRead *.dsc set filetype=javascript
 " au BufNewFile,BufRead *.xml,*.htm,*.html so XMLFolding
 " let g:xml_syntax_folding=1
