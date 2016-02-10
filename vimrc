@@ -193,3 +193,7 @@ let g:syntastic_loc_list_height = 0
 let g:syntastic_javascript_checkers = ['jshint']
 let g:syntastic_coffeescript_checkers = ['coffeelint']
 set t_Co=256
+let g:ctrlp_cache_dir = $HOME . '/.cache/ctrlp'
+if executable('ag')
+  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+endif
