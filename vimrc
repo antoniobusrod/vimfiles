@@ -130,6 +130,9 @@ nmap <leader>g :GitGutterToggle<CR>
 nmap <leader>c <Plug>Kwbd
 map <silent> <leader>V :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimrc reloaded'"<CR>
 
+" search for visually selected text
+:vn // y/<C-R>"<CR>
+
 " ctrlp.vim config
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|components'
 
