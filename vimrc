@@ -110,8 +110,26 @@ endif
 
 set t_Co=256
 
+" ================ Swap Files ======================
+"set nobackup       "no backup files
+"set nowritebackup  "only in case you don't want a backup file while editing
+"set noswapfile     "no swap files
+"set nowb
+set backupdir=/tmp
+set dir=/tmp
+
+" ================ Persistent Undo ==================
+" Keep undo history across sessions, by storing in file.
+" Only works all the time.
+if has('persistent_undo') && !isdirectory(expand('~').'/.vim/backups')
+  silent !mkdir ~/.vim/backups > /dev/null 2>&1
+  set undodir=~/.vim/backups
+  set undofile
 endif
 
+" ================ Editing ===========================
+
+set clipboard+=unnamed " Yanks go on clipboard instead.
 
 " ================ Custom Settings ========================
 so ~/.vim/config.vim
