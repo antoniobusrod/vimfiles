@@ -87,14 +87,6 @@ imap <C-Return> <CR><CR><C-o>k<Tab>
 " search for visually selected text
 :vn // y/<C-R>"<CR>
 
-" ctrlp.vim config
-let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|components'
-
-let g:NERDTreeWinSize=50 
-let g:NERDSpaceDelims=1
-au FileType javascript set dictionary+=$HOME/vimfiles/dict/node.dict
-let g:tern_map_keys=1
-let g:tern_show_argument_hints='on_hold'
 au BufNewFile,BufRead *.dsc set filetype=javascript
 " au BufNewFile,BufRead *.xml,*.htm,*.html so XMLFolding
 " let g:xml_syntax_folding=1
@@ -108,27 +100,6 @@ autocmd InsertLeave,WinLeave * if exists('w:last_fdm') | let &l:foldmethod=w:las
 
 " fold by indentation, two-space indentation for CoffeeScript files
 autocmd BufNewFile,BufReadPost *.coffee setl foldmethod=indent shiftwidth=2
-let g:node#includeCoffee = 1
-
-let g:EasyGrepRecursive=1
-
-" vim-airline
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#left_sep = ' '
-let g:airline#extensions#tabline#left_alt_sep = '|'
-" disable detection of whitespace errors
-let g:airline#extensions#whitespace#enabled = 0
-
-" vim-markdown
-let g:vim_markdown_initial_foldlevel=20
-autocmd BufNewFile,BufReadPost *.md set filetype=markdown
-
-" vim-instant-markdown
-let g:instant_markdown_autostart = 0 " use :InstantMarkdownPreview instead
-
-" vim-signify
-let g:signify_vcs_list = [ 'git' ]
-let g:signify_update_on_focusgained = 1
 
 " Vertical column at 80
 if exists('+colorcolumn')
@@ -137,26 +108,14 @@ else
   au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
 endif
 
-" Syntastic
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-" let g:syntastic_always_populate_loc_list = 1
-" let g:syntastic_auto_loc_list = 1
-let g:syntastic_auto_loc_list = 0
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-let g:syntastic_loc_list_height = 0
-let g:syntastic_javascript_checkers = ['jshint']
-let g:syntastic_coffeescript_checkers = ['coffeelint']
 set t_Co=256
-let g:signify_sign_overwrite = 1
 
-let g:ctrlp_cache_dir = $HOME . '/.cache/ctrlp'
-if executable('ag')
-  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 endif
 
 colorscheme lucius
 LuciusDarkLowContrast
+
+" ================ Custom Settings ========================
+so ~/.vim/config.vim
+
 
