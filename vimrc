@@ -144,5 +144,5 @@ if filereadable(expand("~/.vimrc.local"))
 endif
 
 " ================ Custom Settings ========================
-" so ~/.vim/config.vim
+so ~/.vim/config.vim
 
