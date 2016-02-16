@@ -35,8 +35,7 @@ set hlsearch
 set smartcase
 set incsearch
 set foldmethod=syntax
-" Disable fold as soon as you open a file
-set foldlevel=20
+set foldlevel=20 " Disable fold as soon as you open a file
 
 " Enable folding for vim-javascript-syntax plugin
 au FileType javascript call JavaScriptFold()
