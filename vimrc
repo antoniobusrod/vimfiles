@@ -12,6 +12,7 @@ set background=light
 syntax on
 
 set encoding=utf-8
+set ffs=unix,dos,mac
 
 set laststatus=2 " enable vim-airline
 set autochdir    " Automatically change the current directory
