@@ -112,10 +112,13 @@ set t_Co=256
 
 endif
 
-colorscheme lucius
-LuciusDarkLowContrast
 
 " ================ Custom Settings ========================
 so ~/.vim/config.vim
 
+" ================ Local Vimrc ========================
+" Use local vimrc if available
+if filereadable(expand("~/.vimrc.local"))
+  source ~/.vimrc.local
+endif
 
