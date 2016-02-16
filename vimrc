@@ -36,6 +36,14 @@ set smartcase
 set incsearch
 set foldmethod=syntax
 set foldlevel=20 " Disable fold as soon as you open a file
+set showcmd  " Show incomplete cmds down the bottom
+set showmode " Show current mode down the bottom
+
+" This makes vim act like all other editors, buffers can
+" exist in the background without being in a window.
+" http://items.sjbach.com/319/configuring-vim-right
+set hidden
+
 
 " Enable folding for vim-javascript-syntax plugin
 au FileType javascript call JavaScriptFold()
