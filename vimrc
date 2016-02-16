@@ -44,7 +44,6 @@ set showmode " Show current mode down the bottom
 " http://items.sjbach.com/319/configuring-vim-right
 set hidden
 
-
 " Enable folding for vim-javascript-syntax plugin
 au FileType javascript call JavaScriptFold()
 
@@ -136,15 +135,14 @@ if has('persistent_undo') && !isdirectory(expand('~').'/.vim/backups')
 endif
 
 " ================ Editing ===========================
-
 set clipboard+=unnamed " Yanks go on clipboard instead.
-
-" ================ Custom Settings ========================
-so ~/.vim/config.vim
 
 " ================ Local Vimrc ========================
 " Use local vimrc if available
 if filereadable(expand("~/.vimrc.local"))
-  source ~/.vimrc.local
+  so ~/.vimrc.local
 endif
+
+" ================ Custom Settings ========================
+" so ~/.vim/config.vim
 
