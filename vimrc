@@ -56,12 +56,8 @@ map <C-l> <C-w>l
 map <C-a> GVgg
 map <C-s> :w <Enter>
 map <C-t> :tabnew <Enter>
-" map <C-w> :close <Enter>
-" map <C-W> :q! <Enter>
-map <F3> n
 map <F6> :CoffeeLint<CR>
 map <F7> :JSHint<CR>
-" map <C-h> :%s/
 map <S-t> vat
 map <S-T> vit
 map <S-{> vi{
