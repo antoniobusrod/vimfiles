@@ -54,7 +54,6 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 map <C-a> GVgg
-map <C-s> :w <Enter>
 map <C-t> :tabnew <Enter>
 map <F6> :CoffeeLint<CR>
 map <F7> :JSHint<CR>
@@ -79,6 +78,8 @@ nmap <leader>b :CtrlPBuffer<CR>
 nmap <leader>d :NERDTreeToggle<CR>
 nmap <leader>f :NERDTreeFind<CR>
 nmap <leader>t :CtrlP<CR>
+nnoremap <Leader>w :w<CR>
+nnoremap <Leader>q :wq<CR>
 nmap <leader>] :TagbarToggle<CR>
 nmap <leader><space> :call whitespace#strip_trailing()<CR>
 nmap <leader>g :GitGutterToggle<CR>
