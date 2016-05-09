@@ -135,12 +135,12 @@ endif
 " ================ Editing ===========================
 set clipboard+=unnamed " Yanks go on clipboard instead.
 
+" ================ Custom Settings ========================
+so ~/.vim/config.vim
+
 " ================ Local Vimrc ========================
 " Use local vimrc if available
 if filereadable(expand("~/.vimrc.local"))
   so ~/.vimrc.local
 endif
-
-" ================ Custom Settings ========================
-so ~/.vim/config.vim
 
