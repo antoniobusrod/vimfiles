@@ -24,7 +24,6 @@ Plugin 'vim-airline/vim-airline-themes.git'
 Plugin 'moll/vim-bbye.git' " Buffer Bye
 Plugin 'antoniobusrod/vim-coffee-script.git'
 " Plugin 'altercation/vim-colors-solarized.git'
-" Plugin 'antoniobusrod/vim-daylight.git'
 " Plugin 'svermeulen/vim-easyclip.git'
 Plugin 'dkprice/vim-easygrep.git'
 Plugin 'Lokaltog/vim-easymotion.git'
