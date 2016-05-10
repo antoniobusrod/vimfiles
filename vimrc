@@ -8,7 +8,6 @@ if filereadable(expand("~/.vim/vundle.vim"))
   source ~/.vim/vundle.vim
 endif
 
-set background=light
 syntax on
 
 set encoding=utf-8
@@ -86,6 +85,7 @@ nmap <leader><space> :call whitespace#strip_trailing()<CR>
 nmap <leader>g :GitGutterToggle<CR>
 nmap <leader>c <Plug>Kwbd
 map <silent> <leader>V :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimrc reloaded'"<CR>
+nmap <leader>gcl :!git cola &<cr>
 
 imap <C-Return> <CR><CR><C-o>k<Tab>
 
@@ -135,12 +135,12 @@ endif
 " ================ Editing ===========================
 set clipboard+=unnamed " Yanks go on clipboard instead.
 
-" ================ Custom Settings ========================
-so ~/.vim/config.vim
-
 " ================ Local Vimrc ========================
 " Use local vimrc if available
 if filereadable(expand("~/.vimrc.local"))
   so ~/.vimrc.local
 endif
+
+" ================ Custom Settings ========================
+so ~/.vim/config.vim
 
