@@ -88,8 +88,6 @@ nmap <leader>c <Plug>Kwbd
 map <silent> <leader>V :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimrc reloaded'"<CR>
 nmap <leader>gcl :!git cola &<cr>
 
-imap <C-Return> <CR><CR><C-o>k<Tab>
-
 " search for visually selected text
 :vn // y/<C-R>"<CR>
 
