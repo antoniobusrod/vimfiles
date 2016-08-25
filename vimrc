@@ -92,8 +92,8 @@ nmap <leader>gcl :!git cola &<cr>
 au BufNewFile,BufRead *.wsdl set filetype=xml
 au BufNewFile,BufRead *.dsc set filetype=javascript
 " au BufNewFile,BufRead *.xml,*.htm,*.html so XMLFolding
-" let g:xml_syntax_folding=1
-" au FileType xml setlocal foldmethod=syntax
+let g:xml_syntax_folding=1
+au FileType xml setlocal foldmethod=syntax
 
 " Don't screw up folds when inserting text that might affect them, until
 " leaving insert mode. Foldmethod is local to the window. Protect against
