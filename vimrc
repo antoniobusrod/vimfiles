@@ -89,6 +89,7 @@ nmap <leader>gcl :!git cola &<cr>
 " search for visually selected text
 :vn // y/<C-R>"<CR>
 
+au BufNewFile,BufRead *.wsdl set filetype=xml
 au BufNewFile,BufRead *.dsc set filetype=javascript
 " au BufNewFile,BufRead *.xml,*.htm,*.html so XMLFolding
 " let g:xml_syntax_folding=1
