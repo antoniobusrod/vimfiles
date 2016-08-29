@@ -130,6 +130,9 @@ if has('persistent_undo') && !isdirectory(expand('~').'/.vim/backups')
   set undofile
 endif
 
+" repeat.vim
+silent! call repeat#set("\<Plug>MyWonderfulMap", v:count)
+
 " ================ Editing ===========================
 set clipboard+=unnamed " Yanks go on clipboard instead.
 
