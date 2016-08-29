@@ -40,6 +40,8 @@ Plugin 'scrooloose/syntastic'
 Plugin 'Shutnik/jshint2.vim'
 Plugin 'elzr/vim-json'
 Plugin 'tpope/vim-abolish'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
+
 " ============================================================================
 
 " All of your Plugins must be added before the following line
