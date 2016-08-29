@@ -39,6 +39,7 @@ Plugin 'tpope/vim-surround.git'
 Plugin 'scrooloose/syntastic'
 Plugin 'Shutnik/jshint2.vim'
 Plugin 'elzr/vim-json'
+Plugin 'tpope/vim-abolish'
 " ============================================================================
 
 " All of your Plugins must be added before the following line
