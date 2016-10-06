@@ -41,6 +41,7 @@ Plugin 'Shutnik/jshint2.vim'
 Plugin 'elzr/vim-json'
 Plugin 'tpope/vim-abolish'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
+Plugin 'leafgarland/typescript-vim.git'
 
 " ============================================================================
 
