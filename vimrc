@@ -18,13 +18,15 @@ set autochdir    " Automatically change the current directory
 set number       " Display line numbers
 set autoread     " Automatic read outside file changes
 
+" tab is 2/4 spaces
+set tabstop=2    " an hard TAB displays as 2 columns
+set shiftwidth=2 " operation >> indents 2 columns; << unindents 2 columns
+
 set backspace=2  " make backspace work like most other apps
 set wrap
 set linebreak
 set autoindent   " align the new line indent with the previous line
 set smartindent
-set tabstop=2    " an hard TAB displays as 2 columns
-set shiftwidth=2 " operation >> indents 2 columns; << unindents 2 columns
 set expandtab    " insert spaces when hitting TABs
 " set softtabstop=2 " insert/delete 2 spaces when hitting a TAB/BACKSPACE
 " set shiftround    " round indent to multiple of 'shiftwidth'
