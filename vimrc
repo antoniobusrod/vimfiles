@@ -56,7 +56,6 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 map <C-a> GVgg
-map <C-t> :tabnew <Enter>
 map <F6> :CoffeeLint<CR>
 map <F7> :JSHint<CR>
 map <S-t> vat
@@ -148,3 +147,7 @@ if filereadable(expand("~/.vimrc.local"))
 endif
 
 imap <C-Return> <CR><CR><C-o>k<Tab>
+
+ca tn tabnew
+ca th tabp
+ca tl tabn
