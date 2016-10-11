@@ -43,6 +43,8 @@ Plugin 'tpope/vim-abolish'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'leafgarland/typescript-vim.git'
 Plugin 'embear/vim-localvimrc'
+Plugin 'Quramy/tsuquyomi'
+Plugin 'Shougo/vimproc.vim'
 
 " ============================================================================
 
