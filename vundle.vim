@@ -45,6 +45,7 @@ Plugin 'leafgarland/typescript-vim.git'
 Plugin 'embear/vim-localvimrc'
 Plugin 'Quramy/tsuquyomi'
 Plugin 'Shougo/vimproc.vim'
+Plugin 'mustache/vim-mustache-handlebars'
 
 " ============================================================================
 
