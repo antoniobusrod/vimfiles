@@ -56,7 +56,6 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 map <C-a> GVgg
-map <F7> :JSHint<CR>
 map <F9> :nohlsearch<CR>
 map <F5> :tabclose<CR>
 map <F8> :let @/='\<<C-R>=expand("<cword>")<CR>\>'<CR>:set hls<CR>
