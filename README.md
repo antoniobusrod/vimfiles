@@ -3,7 +3,7 @@ antoniobusrod's vim configuration
 
 Installation
 ------------
-1. Clone repo, `git clone https://github.com/antoniobusrod/vimfiles.git`
+1. Clone repo, `git clone https://github.com/antoniobusrod/vimfiles.git ~/.vim`
 2. [Install vundle plugin](https://github.com/VundleVim/Vundle.vim#quick-start)
 3. Install dependencies, `vim +PluginInstall +qall`
    1. Update dependencies `vim +PluginUpdate +qall`
