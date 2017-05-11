@@ -73,7 +73,6 @@ nmap <leader>d :NERDTreeToggle<CR>
 nmap <leader>f :NERDTreeFind<CR>
 nmap <leader>t :CtrlP<CR>
 nnoremap <Leader>w :w<CR>
-nmap <leader>] :TagbarToggle<CR>
 nmap <leader><space> :call whitespace#strip_trailing()<CR>
 nmap <leader>g :GitGutterToggle<CR>
 nmap <leader>c <Plug>Kwbd
