@@ -139,6 +139,7 @@ if filereadable(expand("~/.vimrc.local"))
 endif
 
 " imap <C-Return> <CR><CR><C-o>k<Tab>
+set go=c
 
 ca tn tabnew
 ca th tabp
