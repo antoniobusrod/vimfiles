@@ -138,7 +138,7 @@ if filereadable(expand("~/.vimrc.local"))
   so ~/.vimrc.local
 endif
 
-imap <C-Return> <CR><CR><C-o>k<Tab>
+" imap <C-Return> <CR><CR><C-o>k<Tab>
 
 ca tn tabnew
 ca th tabp
