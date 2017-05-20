@@ -15,3 +15,13 @@ Installation
 5. Edit your `.gvimrc` from base file (edit `colorscheme` and lucius mode).
 
 Ready to use
+
+## Post installation
+
+- Install Node dependencies for **tsuquyomi** and review if `package.json` is up to date
+- Install **YouCompleteMe** (Python required)
+
+```
+python install.py --tern-completer --clang-completer
+```
+
