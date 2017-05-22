@@ -25,3 +25,9 @@ Ready to use
 python install.py --tern-completer --clang-completer
 ```
 
+## Deploy basic installation
+
+```sh
+curl -o ~/.vimrc https://raw.githubusercontent.com/antoniobusrod/vimfiles/master/vimrc-basic
+```
+

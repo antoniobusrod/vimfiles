@@ -1,0 +1,92 @@
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+syntax on
+
+set encoding=utf-8
+set ffs=unix,dos,mac
+
+set laststatus=2 " enable vim-airline
+set autochdir    " Automatically change the current directory
+set number       " Display line numbers
+set autoread     " Automatic read outside file changes
+
+" tab is 2/4 spaces
+set tabstop=2    " an hard TAB displays as 2 columns
+set shiftwidth=2 " operation >> indents 2 columns; << unindents 2 columns
+
+set backspace=2  " make backspace work like most other apps
+set wrap
+set linebreak
+set autoindent   " align the new line indent with the previous line
+set smartindent
+set expandtab    " insert spaces when hitting TABs
+" set softtabstop=2 " insert/delete 2 spaces when hitting a TAB/BACKSPACE
+" set shiftround    " round indent to multiple of 'shiftwidth'
+set formatoptions=l " word wrap without line breaks I
+set lbr " word wrap without line breaks II
+set hlsearch
+" set ignorecase!
+set smartcase
+set incsearch
+set foldmethod=syntax
+set foldlevel=20 " Disable fold as soon as you open a file
+set showcmd  " Show incomplete cmds down the bottom
+set showmode " Show current mode down the bottom
+
+" This makes vim act like all other editors, buffers can
+" exist in the background without being in a window.
+" http://items.sjbach.com/319/configuring-vim-right
+set hidden
+
+" keyboard shortcuts
+let mapleader = ','
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
+map <C-a> GVgg
+map <F9> :nohlsearch<CR>
+map <F5> :tabclose<CR>
+map <F8> :let @/='\<<C-R>=expand("<cword>")<CR>\>'<CR>:set hls<CR>
+
+set langmenu=en_US.UTF-8
+let $LANG = 'en_US'
+source $VIMRUNTIME/delmenu.vim
+source $VIMRUNTIME/menu.vim
+
+" search for visually selected text
+:vn // y/<C-R>"<CR>
+
+au FileType xml setlocal foldmethod=syntax
+
+" Vertical column at 80
+if exists('+colorcolumn')
+  set colorcolumn=80
+else
+  au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
+endif
+
+" ================ Swap Files ======================
+"set nobackup       "no backup files
+"set nowritebackup  "only in case you don't want a backup file while editing
+"set noswapfile     "no swap files
+"set nowb
+set backupdir=/tmp
+set dir=/tmp
+
+" ================ Persistent Undo ==================
+" Keep undo history across sessions, by storing in file.
+" Only works all the time.
+if has('persistent_undo') && !isdirectory(expand('~').'/.vim/backups')
+  silent !mkdir ~/.vim/backups > /dev/null 2>&1
+  set undodir=~/.vim/backups
+  set undofile
+endif
+
+" imap <C-Return> <CR><CR><C-o>k<Tab>
+set go=c
+
+ca tn tabnew
+ca th tabp
+ca tl tabn
