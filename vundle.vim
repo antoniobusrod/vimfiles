@@ -37,6 +37,7 @@ Plugin 'embear/vim-localvimrc'
 Plugin 'Quramy/tsuquyomi'
 Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'nginx.vim'
+Plugin 'lfilho/cosco.vim'
 
 " ============================================================================
 
