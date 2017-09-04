@@ -38,6 +38,7 @@ Plugin 'Quramy/tsuquyomi'
 Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'nginx.vim'
 Plugin 'lfilho/cosco.vim'
+Plugin 'drzel/vim-line-no-indicator'
 
 " ============================================================================
 
