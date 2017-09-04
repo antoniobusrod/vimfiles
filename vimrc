@@ -46,9 +46,6 @@ set showmode " Show current mode down the bottom
 " http://items.sjbach.com/319/configuring-vim-right
 set hidden
 
-" Enable folding for vim-javascript-syntax plugin
-au FileType javascript call JavaScriptFold()
-
 " keyboard shortcuts
 let mapleader = ','
 map <C-h> <C-w>h
