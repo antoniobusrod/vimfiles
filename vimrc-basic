@@ -3,6 +3,7 @@ filetype off                  " required
 
 syntax on
 colorscheme desert
+set ruler
 
 set encoding=utf-8
 set ffs=unix,dos,mac
