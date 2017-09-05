@@ -65,6 +65,7 @@ au FileType xml setlocal foldmethod=syntax
 " Vertical column at 80
 if exists('+colorcolumn')
   set colorcolumn=80
+  highlight ColorColumn ctermbg=gray guibg=gray
 else
   au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
 endif
