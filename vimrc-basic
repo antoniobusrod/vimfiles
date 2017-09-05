@@ -2,6 +2,7 @@ set nocompatible              " be iMproved, required
 filetype off                  " required
 
 syntax on
+colorscheme desert
 
 set encoding=utf-8
 set ffs=unix,dos,mac
