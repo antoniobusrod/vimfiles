@@ -141,3 +141,5 @@ set go=c
 ca tn tabnew
 ca th tabp
 ca tl tabn
+
+set omnifunc=syntaxcomplete#Complete
