@@ -8,5 +8,5 @@ let g:syntastic_enable_balloons = 0
 let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_coffeescript_checkers = ['coffeelint']
 let g:syntastic_typescript_checkers = ['tsuquyomi', 'tslint']
-let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': [],'passive_filetypes': [] }
+let g:syntastic_mode_map = { 'mode': 'active' }
 
