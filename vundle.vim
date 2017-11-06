@@ -15,7 +15,6 @@ Plugin 'ctrlpvim/ctrlp.vim.git'
 Plugin 'Raimondi/delimitMate.git' " provides insert mode auto-completion for quotes, parens, brackets, etc
 Plugin 'scrooloose/nerdtree.git'
 Plugin 'godlygeek/tabular.git'
-" Plugin 'marijnh/tern_for_vim.git'
 Plugin 'chriskempson/base16-vim'
 Plugin 'tpope/vim-fugitive.git'
 Plugin 'nathanaelkane/vim-indent-guides'
