@@ -11,7 +11,6 @@ Plugin 'VundleVim/Vundle.vim'
 " ==== Custom plugins ========================================================
 " ============================================================================
 Plugin 'vim-scripts/The-NERD-Commenter.git'
-Plugin 'Valloric/YouCompleteMe'
 Plugin 'ctrlpvim/ctrlp.vim.git'
 Plugin 'Raimondi/delimitMate.git' " provides insert mode auto-completion for quotes, parens, brackets, etc
 Plugin 'scrooloose/nerdtree.git'
