@@ -31,7 +31,7 @@ Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'leafgarland/typescript-vim.git'
 Plugin 'embear/vim-localvimrc'
 Plugin 'Quramy/tsuquyomi'
-Plugin 'mustache/vim-mustache-handlebars'
+" Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'nginx.vim'
 Plugin 'lfilho/cosco.vim'
 
