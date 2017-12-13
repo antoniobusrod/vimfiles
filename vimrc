@@ -127,7 +127,9 @@ silent! call repeat#set("\<Plug>MyWonderfulMap", v:count)
 set clipboard+=unnamed " Yanks go on clipboard instead.
 
 " ================ Custom Settings ========================
-so ~/.vim/config.vim
+for fpath in split(globpath('~/.vim/config', '*.vim'), '\n')
+  exe 'source' fpath
+endfor
 
 " ================ Local Vimrc ========================
 " Use local vimrc if available
@@ -143,3 +145,4 @@ ca th tabp
 ca tl tabn
 
 set omnifunc=syntaxcomplete#Complete
+
