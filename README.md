@@ -8,9 +8,8 @@ Installation
 3. Install dependencies, `vim +PluginInstall +qall`
    1. Update dependencies `vim +PluginUpdate +qall`
 4. Set symbolic links to `.vim` dir and `.vimrc` file
-  ```
-  ln -s vimfiles ~/.vim
-  ln -s vimfiles/vimrc ~/.vimrc
+  ```sh
+  ln -s ~/.vim/vimrc ~/.vimrc
   ```
 5. Edit your `.gvimrc` from base file (edit `colorscheme` and lucius mode).
 
