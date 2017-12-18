@@ -24,7 +24,7 @@ Plugin 'plasticboy/vim-markdown.git'
 Plugin 'jshafton/vim-node.git'
 Plugin 'guileen/vim-node-dict.git'
 Plugin 'mhinz/vim-signify.git'
-Plugin 'Raimondi/delimitMate' " provides insert mode auto-completion for quotes, parens, brackets, etc
+Plugin 'jiangmiao/auto-pairs'
 Plugin 'scrooloose/syntastic'
 Plugin 'elzr/vim-json'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
