@@ -94,6 +94,9 @@ autocmd InsertLeave,WinLeave * if exists('w:last_fdm') | let &l:foldmethod=w:las
 " fold by indentation, two-space indentation for CoffeeScript files
 autocmd BufNewFile,BufReadPost *.coffee setl foldmethod=indent shiftwidth=2
 
+" Use identation foldmethod for Markdown
+autocmd Syntax yaml,yml setlocal foldmethod=indent
+
 " Vertical column at 80
 if exists('+colorcolumn')
   set colorcolumn=80
