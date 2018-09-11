@@ -96,6 +96,9 @@ autocmd BufNewFile,BufReadPost *.coffee setl foldmethod=indent shiftwidth=2
 
 " Use identation foldmethod for Markdown
 autocmd Syntax yaml,yml setlocal foldmethod=indent
+" Use identation foldmethod for Python
+autocmd Syntax python setlocal foldmethod=indent
+
 
 " Vertical column at 80
 if exists('+colorcolumn')
