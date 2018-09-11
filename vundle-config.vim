@@ -35,6 +35,7 @@ Plugin 'Quramy/tsuquyomi'
 Plugin 'nginx.vim'
 Plugin 'lfilho/cosco.vim'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'nvie/vim-flake8'
 
 " ============================================================================
 
