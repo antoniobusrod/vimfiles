@@ -6,3 +6,7 @@ let g:ycm_filetype_specific_completion_to_disable = {
       \ 'typescript': 1,
       \ 'gitcommit': 1
       \}
+nmap <leader>jd :YcmCompleter GoTo<CR>
+nmap <leader>jf :YcmCompleter GoToDefinition<CR>
+nmap <leader>jh :YcmCompleter GetDoc<CR>
+
