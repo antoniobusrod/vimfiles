@@ -37,7 +37,6 @@ Plugin 'nginx.vim'
 Plugin 'lfilho/cosco.vim'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'Valloric/YouCompleteMe'
-Plugin 'nvie/vim-flake8'
 Plugin 'bitc/vim-bad-whitespace'
 
 " ============================================================================
