@@ -38,6 +38,7 @@ Plugin 'lfilho/cosco.vim'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'bitc/vim-bad-whitespace'
+Plugin 'altercation/vim-colors-solarized.git'
 
 " ============================================================================
 
