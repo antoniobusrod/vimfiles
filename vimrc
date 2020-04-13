@@ -27,6 +27,7 @@ set backspace=2  " make backspace work like most other apps
 set wrap
 set linebreak
 set autoindent   " align the new line indent with the previous line
+set virtualedit=all
 set smartindent
 set expandtab    " insert spaces when hitting TABs
 " set softtabstop=2 " insert/delete 2 spaces when hitting a TAB/BACKSPACE
