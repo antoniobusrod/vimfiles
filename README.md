@@ -6,12 +6,10 @@ Configuration and plugins managed by [vim-plug](https://github.com/junegunn/vim-
 Use `vimrc-basic` configuration for minimal vim setup.
 
 ## Installation
+1. Clone this repo under `.vim` directory: `git clone https://github.com/antoniobusrod/vimfiles.git ~/.vim`
+1. Create symbolic links for `~/.vimrc` to `.vim` directory: `ln -s ~/.vim/vimrc ~/.vimrc`
 1. [Follow vim-plug "Installation" instructions](https://github.com/junegunn/vim-plug#installation)
 1. Open `vim` and install plugins with `:PlugInstall`
-1. Set symbolic links to `.vim` dir and `.vimrc` file
-  ```sh
-  ln -s ~/.vim/vimrc ~/.vimrc
-  ```
 1. Keep custom configuration in `~/.vimrc.local` file
 1. [Follow YouCompleteMe plugin "Installation" instructions](https://github.com/ycm-core/YouCompleteMe#installation)
 
