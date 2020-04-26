@@ -1,23 +1,19 @@
 antoniobusrod's vim configuration
 =================================
 
-Installation
-------------
-1. Clone repo, `git clone https://github.com/antoniobusrod/vimfiles.git ~/.vim`
-2. [Install vundle plugin](https://github.com/VundleVim/Vundle.vim#quick-start): `git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim`
-3. Install dependencies, `vim +PluginInstall +qall`
-   1. Update dependencies `vim +PluginUpdate +qall`
-4. Set symbolic links to `.vim` dir and `.vimrc` file
+Configuration and plugins managed by [vim-plug](https://github.com/junegunn/vim-plug).
+
+Use `vimrc-basic` configuration for minimal vim setup.
+
+## Installation
+1. [Follow vim-plug "Installation" instructions](https://github.com/junegunn/vim-plug#installation)
+1. Open `vim` and install plugins with `:PlugInstall`
+1. Set symbolic links to `.vim` dir and `.vimrc` file
   ```sh
   ln -s ~/.vim/vimrc ~/.vimrc
   ```
-5. Edit your `.gvimrc` from base file (edit `colorscheme` and lucius mode).
-
-Ready to use
-
-## Post installation
-
-- Install Node dependencies for **tsuquyomi** and review if `package.json` is up to date
+1. Keep custom configuration in `~/.vimrc.local` file
+1. [Follow YouCompleteMe plugin "Installation" instructions](https://github.com/ycm-core/YouCompleteMe#installation)
 
 ## Deploy basic installation
 

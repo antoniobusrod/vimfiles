@@ -4,8 +4,8 @@ filetype off                  " required
 " =============== Vundle Initialization ===============
 " " This loads all the plugins specified in ~/.vim/vundles.vim
 " " Use Vundle plugin to manage all other plugins
-if filereadable(expand("~/.vim/vundle-config.vim"))
-  source ~/.vim/vundle-config.vim
+if filereadable(expand("~/.vim/vim-plug.config"))
+  source ~/.vim/vim-plug.config
 endif
 
 syntax on
