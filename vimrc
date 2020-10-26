@@ -115,10 +115,6 @@ endif
 set t_Co=256
 
 " ================ Swap Files ======================
-"set nobackup       "no backup files
-"set nowritebackup  "only in case you don't want a backup file while editing
-"set noswapfile     "no swap files
-"set nowb
 set backupdir=/tmp
 set dir=/tmp
 
