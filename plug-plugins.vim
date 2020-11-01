@@ -16,7 +16,6 @@ Plug 'mhinz/vim-signify'
 Plug 'tpope/vim-surround'
 Plug 'jiangmiao/auto-pairs'
 Plug 'embear/vim-localvimrc'
-Plug 'vim-scripts/AutoComplPop'
 Plug 'bitc/vim-bad-whitespace'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'editorconfig/editorconfig-vim'
