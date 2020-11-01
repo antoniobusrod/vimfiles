@@ -7,8 +7,8 @@ set ffs=unix,dos,mac
 " =============== Vundle Initialization ===============
 " " This loads all the plugins specified in ~/.vim/vundles.vim
 " " Use Vundle plugin to manage all other plugins
-if filereadable(expand("~/.vim/vim-plug.config"))
-  source ~/.vim/vim-plug.config
+if filereadable(expand("~/.vim/plug-config.vim"))
+  source ~/.vim/plug-config.vim
 endif
 
 set laststatus=2      " enable vim-airline
@@ -117,11 +117,6 @@ endif
 
 " ================ Editing ===========================
 set clipboard+=unnamed " Yanks go on clipboard instead.
-
-" ================ Custom Settings ========================
-for fpath in split(globpath('~/.vim/config', '*.vim'), '\n')
-  exe 'source' fpath
-endfor
 
 " ================ Local Vimrc ========================
 " Use local vimrc if available

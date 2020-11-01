@@ -1,3 +1,38 @@
+call plug#begin('~/.vim/plugged')
+
+Plug 'preservim/nerdcommenter'
+Plug 'godlygeek/tabular', { 'on': 'Tabularize' }
+Plug 'chriskempson/base16-vim'
+Plug 'nathanaelkane/vim-indent-guides', { 'on': 'IndentGuidesEnable' }
+Plug 'suan/vim-instant-markdown', { 'for': 'markdown' }
+Plug 'plasticboy/vim-markdown', { 'for': 'markdown' }
+Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
+Plug 'jshafton/vim-node', { 'for': 'javascript' }
+Plug 'guileen/vim-node-dict', { 'for': 'javascript' }
+Plug 'leafgarland/typescript-vim', { 'for': 'typescript' }
+Plug 'Quramy/tsuquyomi', { 'for': 'typescript' }
+Plug 'davidhalter/jedi-vim', { 'for': 'python' }
+Plug 'scrooloose/syntastic', { 'for': ['python', 'javascript', 'typescript'] }
+Plug 'martinda/Jenkinsfile-vim-syntax', { 'for': 'Jenkinsfile' }
+Plug 'mhinz/vim-signify'
+Plug 'tpope/vim-surround'
+Plug 'jiangmiao/auto-pairs'
+Plug 'embear/vim-localvimrc'
+Plug 'vim-scripts/AutoComplPop'
+Plug 'bitc/vim-bad-whitespace'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'editorconfig/editorconfig-vim'
+Plug 'tpope/vim-fugitive', { 'on': 'Gblame' }
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'itchyny/lightline.vim'
+
+call plug#end()
+
+
+" =============================================================================
+" coc plugin settings
+" =============================================================================
 " TextEdit might fail if hidden is not set.
 set hidden
 
@@ -147,3 +182,86 @@ nnoremap <silent><nowait> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
+
+
+" =============================================================================
+" editorconfig plugin settings
+" =============================================================================
+ let g:EditorConfig_max_line_indicator = "line"
+" =============================================================================
+
+
+" =============================================================================
+" fzf plugin settings
+" =============================================================================
+nmap <leader>t :FZF<CR>
+nmap <leader>a :Ag<CR>
+
+
+" =============================================================================
+" instant-markdown
+" =============================================================================
+let g:instant_markdown_autostart = 0 " use :InstantMarkdownPreview instead
+
+
+" =============================================================================
+" localvimrc plugin settings
+" =============================================================================
+let g:localvimrc_ask=0
+
+
+" =============================================================================
+" markdown plugin settings
+" =============================================================================
+let g:vim_markdown_initial_foldlevel=20
+autocmd BufNewFile,BufReadPost *.md set filetype=markdown
+
+" =============================================================================
+" nerdcommenter plugin settings
+" =============================================================================
+let g:NERDSpaceDelims=1
+
+
+" =============================================================================
+" node-dict plugin settings
+" =============================================================================
+au FileType javascript set dictionary+=$HOME/vimfiles/dict/node.dict
+
+
+" =============================================================================
+" node plugin settings
+" =============================================================================
+let g:node#includeCoffee = 1
+
+
+" =============================================================================
+" signify plugin settings
+" =============================================================================
+let g:signify_sign_overwrite = 1
+let g:signify_vcs_list = [ 'git' ]
+let g:signify_update_on_focusgained = 1
+
+
+" =============================================================================
+" syntastic plugin settings
+" =============================================================================
+let g:syntastic_always_populate_loc_list = 0
+let g:syntastic_auto_loc_list = 0
+let g:syntastic_check_on_open = 0
+let g:syntastic_check_on_wq = 0
+let g:syntastic_loc_list_height = 0
+let g:syntastic_aggregate_errors = 1
+let g:syntastic_enable_balloons = 0
+let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_coffeescript_checkers = ['coffeelint']
+let g:syntastic_typescript_checkers = ['tsuquyomi', 'tslint']
+let g:syntastic_python_checkers = ['flake8']
+let g:syntastic_mode_map = { 'mode': 'active' }
+
+" =============================================================================
+" tsuquyomi plugin settings
+" =============================================================================
+let g:tsuquyomi_disable_quickfix = 1
+let g:tsuquyomi_save_onrename = 1
+autocmd FileType typescript nmap <buffer> <F6> : <C-u>echo tsuquyomi#hint()<CR>
+autocmd FileType typescript nmap <buffer> <leader><F6> : let @a=tsuquyomi#hint()<CR>
