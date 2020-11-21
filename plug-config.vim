@@ -164,6 +164,7 @@ nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 " =============================================================================
 nmap <leader>t :FZF<CR>
 nmap <leader>a :Ag<CR>
+let $FZF_DEFAULT_COMMAND = 'ag -g ""'
 
 
 " =============================================================================
