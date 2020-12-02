@@ -14,7 +14,6 @@ if filereadable(expand("~/.vim/plug-plugins.vim"))
 endif
 
 set laststatus=2      " enable vim-airline
-set autochdir         " Automatically change the current directory
 set number            " Display line numbers
 set relativenumber    " Show relative line numbers
 set autoread          " Automatic read outside file changes
