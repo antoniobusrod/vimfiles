@@ -1,5 +1,4 @@
-antoniobusrod's vim configuration
-=================================
+# antoniobusrod's vim configuration
 
 Configuration and plugins managed by [vim-plug](https://github.com/junegunn/vim-plug).
 
@@ -10,11 +9,11 @@ Use `vimrc-basic` configuration for minimal vim setup.
 1. Create symbolic links for `~/.vimrc` from `.vim` directory: `ln -s ~/.vim/vimrc ~/.vimrc`
 1. [Follow vim-plug "Installation" instructions](https://github.com/junegunn/vim-plug#installation)
 1. Open `vim` and install plugins with `:PlugInstall`
-1. Keep custom configuration in `~/.vimrc.local` file
+
+## Custom configuration
+
+Keep custom configuration in `~/.vimrc.local` file
 
 ## Deploy basic installation
 
-```sh
-curl -o ~/.vimrc https://raw.githubusercontent.com/antoniobusrod/vimfiles/master/vimrc-basic
-```
-
+    $ curl -o ~/.vimrc https://raw.githubusercontent.com/antoniobusrod/vimfiles/master/vimrc-basic
