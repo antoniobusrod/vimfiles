@@ -17,7 +17,6 @@ Plug 'tpope/vim-surround'
 Plug 'jiangmiao/auto-pairs'
 Plug 'embear/vim-localvimrc'
 Plug 'bitc/vim-bad-whitespace'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'editorconfig/editorconfig-vim'
 Plug 'tpope/vim-fugitive', { 'on': 'Gblame' }
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
