@@ -9,7 +9,6 @@ Use `vimrc-basic` configuration for minimal vim setup.
 1. Create symbolic links for `~/.vimrc` from `.vim` directory: `ln -s ~/.vim/vimrc ~/.vimrc`
 1. [Follow vim-plug "Installation" instructions](https://github.com/junegunn/vim-plug#installation)
 1. Open `vim` and install plugins with `:PlugInstall`
-1. Install [coc-pyright](https://github.com/fannheyward/coc-pyright)
 
 ## Custom configuration
 
