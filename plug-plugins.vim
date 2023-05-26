@@ -22,3 +22,4 @@ Plug 'tpope/vim-fugitive', { 'on': 'Gblame' }
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'itchyny/lightline.vim'
+Plug 'vitalk/vim-shebang'
