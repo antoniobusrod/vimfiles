@@ -84,6 +84,4 @@ autocmd FileType typescript nmap <buffer> <leader><F6> : let @a=tsuquyomi#hint()
 " =============================================================================
 " copilot plugin settings
 " =============================================================================
-let g:copilot_filetypes = {
-  \ 'markdown': v:true
-\}
+let g:copilot_filetypes = { '*': v:false, 'markdown': v:true, 'python': v:true, 'javascript': v:true, 'typescript': v:true, 'Markdown': v:true, 'Python': v:true, 'JavaScript': v:true, 'TypeScript': v:true, }
