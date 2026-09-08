@@ -1,9 +1,3 @@
-set nocompatible " be iMproved, required
-filetype off     " required
-syntax on
-set encoding=utf-8
-set ffs=unix,dos,mac
-
 " =============== Vundle Initialization ===============
 " " This loads all the plugins specified in ~/.vim/vundles.vim
 " " Use Vundle plugin to manage all other plugins
